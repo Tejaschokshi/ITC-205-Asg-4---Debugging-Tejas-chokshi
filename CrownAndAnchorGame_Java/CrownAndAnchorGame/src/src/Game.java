@@ -47,7 +47,7 @@ public class Game {
 		else 
 		{
 			// resloving the bug 4.
-			players.takebet (bet);
+			player.takebet (bet);
 		}
         return winnings;		
 	}
