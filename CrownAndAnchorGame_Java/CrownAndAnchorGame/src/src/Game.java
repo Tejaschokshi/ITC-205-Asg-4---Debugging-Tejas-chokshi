@@ -44,6 +44,11 @@ public class Game {
 		if (matches > 0) {			
 			player.receiveWinnings(winnings);
 		}
+		else 
+		{
+			// resloving the bug 4.
+			players.takebet (bet);
+		}
         return winnings;		
 	}
 	
