@@ -23,7 +23,7 @@ public enum DiceValue {
 	
 	public static DiceValue getRandom() {
 		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal() );
-		//bug 2 is identified. 
+		//trying to testing and fix the bug 
 		return values()[random];
 	}
 	
