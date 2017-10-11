@@ -105,31 +105,5 @@ public class PlayerTest
 		}
 	}
 
-	@Test
-	public void TestTakeBetBig()
-	{
-		int limit = player.getLimit();
-		int balance = player.getBalance();
-		player.setLimit(5);
-		int bet = balance - player.getLimit() + 1;
 
-		try
-		{
-			player.takeBet(bet);
-			assertEquals(true, false); //if we get to this point, the exception was not thrown.
-		}
-		catch(IllegalArgumentException e)
-		{
-			assertEquals(true, e.getMessage().equals("Placing bet would go below limit."));
-		}
-		finally
-		{
-			player.setBalance(balance);
-			player.setLimit(limit);
-			/*just in case it changed - in finally block so it gets put back
-			 * whether or not an exception was thrown (so it won't affect the
-			 * other tests)
-			 */
-		}
-	}
 }
