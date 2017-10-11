@@ -38,7 +38,7 @@ public class Game {
 				matches += 1;
 			}
 		}
-		
+		// bug 4 is identified.
 		int winnings = matches * bet;
 
 		if (matches > 0) {			
