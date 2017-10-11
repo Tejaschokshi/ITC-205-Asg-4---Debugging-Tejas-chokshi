@@ -18,9 +18,9 @@ public class Player {
 	public int getLimit() { return limit; }
 	
 	public void setLimit(int limit) {
-		if (limit < 0) throw new IllegalArgumentException
+		if (limit <= 0) throw new IllegalArgumentException
 		("Limit cannot be negative.");
-		if (limit > balance)  throw new IllegalArgumentException("Limit cannot be greater than balance.");
+		if (limit => balance)  throw new IllegalArgumentException("Limit cannot be greater than balance.");
 		this.limit = limit;
 	}
 
