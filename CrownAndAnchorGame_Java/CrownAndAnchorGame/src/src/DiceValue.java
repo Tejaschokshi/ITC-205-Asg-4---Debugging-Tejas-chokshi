@@ -22,8 +22,8 @@ public enum DiceValue {
 	}
 	
 	public static DiceValue getRandom() {
-		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal() );
-		//trying to testing and fix the bug 
+		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal()+ 1);
+		//bug 2 is resloved. 
 		return values()[random];
 	}
 	
