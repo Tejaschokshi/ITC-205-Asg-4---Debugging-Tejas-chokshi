@@ -10,6 +10,7 @@ public class Player {
 		this.name = name;
 		this.balance = balance;
 		this.limit = 0;
+		// The limit of the game is set to 0 but the game ends when player still has the $5 to play. 
 	}
 		
 	public String getName() { return name; }
@@ -17,7 +18,8 @@ public class Player {
 	public int getLimit() { return limit; }
 	
 	public void setLimit(int limit) {
-		if (limit < 0) throw new IllegalArgumentException("Limit cannot be negative.");
+		if (limit < 0) throw new IllegalArgumentException
+		("Limit cannot be negative.");
 		if (limit > balance)  throw new IllegalArgumentException("Limit cannot be greater than balance.");
 		this.limit = limit;
 	}
