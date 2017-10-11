@@ -10,7 +10,7 @@ public class Dice {
 		return value;
 	}
 // All rolls are the same in each run through 
-//bug 3 is identified 
+//bug 3 testing
 	public DiceValue roll() {
 		return DiceValue.getRandom();
 	}		
